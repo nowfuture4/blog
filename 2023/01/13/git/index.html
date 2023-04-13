@@ -18,20 +18,20 @@
   
     <meta name="description" content="Gitgit安装在 Linux 上安装 Centos(无维护):sudo dnf install git-all  Debian:sudo apt install git-all  在 Windows 上安装 直接下载安装文件，别下载压缩包，压缩包没环境 源文件安装，比较麻烦，有必要就按需安装  初次运行git前的配置用户信息12git config --global user.name &amp;quo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="git">
+<meta property="og:title" content="Git">
 <meta property="og:url" content="http://chasingbalance.top/2023/01/13/git/index.html">
 <meta property="og:site_name" content="chasing balance">
 <meta property="og:description" content="Gitgit安装在 Linux 上安装 Centos(无维护):sudo dnf install git-all  Debian:sudo apt install git-all  在 Windows 上安装 直接下载安装文件，别下载压缩包，压缩包没环境 源文件安装，比较麻烦，有必要就按需安装  初次运行git前的配置用户信息12git config --global user.name &amp;quo">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2023-01-13T08:45:38.000Z">
-<meta property="article:modified_time" content="2023-04-13T08:50:00.130Z">
+<meta property="article:published_time" content="2023-01-13T13:31:18.000Z">
+<meta property="article:modified_time" content="2023-04-13T16:48:30.855Z">
 <meta property="article:author" content="hanzhiwei">
-<meta property="article:tag" content="git">
+<meta property="article:tag" content="Git">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>git - chasing balance</title>
+  <title>Git - chasing balance</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -197,7 +197,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="git"></span>
+            <span id="subtitle" data-typed-text="Git"></span>
           
         </div>
 
@@ -208,8 +208,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2023-01-13 16:45" pubdate>
-          2023年1月13日 下午
+        <time datetime="2023-01-13 21:31" pubdate>
+          2023年1月13日 晚上
         </time>
       </span>
     
@@ -220,7 +220,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          3.2k 字
+          4.2k 字
         
       </span>
     
@@ -231,7 +231,7 @@
         
         
         
-          27 分钟
+          36 分钟
         
       </span>
     
@@ -282,7 +282,7 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">git</h1>
+            <h1 style="display: none">Git</h1>
             
             
               <div class="markdown-body">
@@ -311,7 +311,7 @@
 <ol start="2">
 <li>克隆现有的仓库<br><code>git clone https://</code></li>
 </ol>
-<h3 id="记录跟新"><a href="#记录跟新" class="headerlink" title="记录跟新"></a>记录跟新</h3><p>文件追踪流程：未追踪&#x3D;&gt;暂存状态；未修改状态&#x3D;&gt;修改状态&#x3D;&gt;暂存状态；暂存状态&#x3D;&gt;提交之后就会回到未修改状态，同时会删除未追踪的文件，更新为提交版本的文件了。这就是一个完整的文件循环流程。</p>
+<h3 id="记录跟新"><a href="#记录跟新" class="headerlink" title="记录跟新"></a>记录跟新</h3><p>文件追踪流程：未追踪&#x3D;&gt;暂存状态；未修改状态&#x3D;&gt;修改状态&#x3D;&gt;暂存状态；暂存状态&#x3D;&gt;提交之后就会回到未修改状态，同时会删除未追踪的文件，更新为提交版本的文件了,这就是一个完整的文件循环流程。即像竹子一样节节高升，平稳推进。</p>
 <ol>
 <li><p>跟踪新文件：<code>git add xxxx.js </code> <code>git add .</code>;</p>
 </li>
@@ -390,7 +390,7 @@
 <h3 id="分支的创建与合并"><a href="#分支的创建与合并" class="headerlink" title="分支的创建与合并"></a>分支的创建与合并</h3><ol>
 <li>新建分支包括hotfix修复上线项目bug：<code>git checkout -b hoxFixBranchName</code></li>
 <li>分支合并:<code>git checkout master</code>,<code>git merge hoxFixBranchName</code>,删除不需要的分支：<code>git branch -d hoxFixBranchName</code></li>
-<li>冲突合并，一般手动解决就可以了；</li>
+<li>冲突合并，根据实际更改情况保留，一般在vscode中比较一下然后手动合并；</li>
 </ol>
 <h3 id="分支管理"><a href="#分支管理" class="headerlink" title="分支管理"></a>分支管理</h3><ol>
 <li>查看分支列表：<code>git branch</code> 参数-v是查看每个分支最后一次提交</li>
@@ -420,6 +420,58 @@
 <h3 id="生成SSH公钥"><a href="#生成SSH公钥" class="headerlink" title="生成SSH公钥"></a>生成SSH公钥</h3><ol>
 <li><p>生成 SSH 公钥：<code>ssh-keygen -o</code></p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><code class="hljs javascript"><span class="hljs-comment">// 查看ssh</span><br>cd ~/.<span class="hljs-property">ssh</span><br>ls<br><span class="hljs-comment">// 直接查看默认路径下的ssh公钥</span><br>cat ~<span class="hljs-regexp">/.ssh/i</span>d_rsa.<span class="hljs-property">pub</span><br></code></pre></td></tr></table></figure></li>
+</ol>
+<h1 id="Git小结"><a href="#Git小结" class="headerlink" title="Git小结"></a>Git小结</h1><ol>
+<li><p>git初始化：<code>git init</code></p>
+</li>
+<li><p>git config配置：</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs javascript">git config --<span class="hljs-variable language_">global</span> user.<span class="hljs-property">name</span> <span class="hljs-string">&quot;hzw728@qq.com&quot;</span><br>git config --<span class="hljs-variable language_">global</span> user.<span class="hljs-property">email</span> <span class="hljs-string">&quot;hzw728@qq.com&quot;</span><br></code></pre></td></tr></table></figure></li>
+<li><p>添加到暂存区：<code>git add .</code></p>
+</li>
+<li><p>提交到本地库：<code>git commit -m &quot;fist commit&quot;</code></p>
+</li>
+<li><p>版本穿梭：</p>
+<ol>
+<li>查看提交情况：<code>git status</code></li>
+<li>查看提交日志：<code>git log</code></li>
+<li>查看操作记录：<code>git reflog</code></li>
+<li>head版本回滚：<code>git reset --hard 919a8bc</code></li>
+<li>head版本回滚一次：<code>git reset --hard HEAD^</code></li>
+<li>暂存区重新写注释：<code>git reset --soft HEAD^</code>,<code>git commit -m &quot;new commit&quot;</code></li>
+<li>暂存区版本撤销并且重新生成一次最新记录：<code>git revert HEAD</code></li>
+<li>git reset与git revert的区别:<ol>
+<li>git reset 回退到指定版本，相当于是隐藏了commit-id之后的记录，并且不会产生新的commit-id的记录，如果要推送到远端服务器，需要强制推送-f，强制推送对其他使用你的分支代码会有影响，慎用。</li>
+<li>git revert 回退到指定版本，但是重新生成一条新的commit-id记录，对其他提交记录没有影响，推送到远端服务器直接push就好了。</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><p>分支管理：</p>
+<ol>
+<li>创建分支：<code>git branch branchName</code></li>
+<li>切换分支：<code>git checkout branchName</code></li>
+<li>合并分支：<code>git merge branchName</code></li>
+<li>删除分支：<code>git branch -d branchName</code></li>
+</ol>
+</li>
+<li><p>远程分支管理：</p>
+<ol>
+<li>添加远程分支：<code>git remote add origin https//</code></li>
+<li>查看远端分支：<code>git remote -v</code></li>
+<li>推送到远端分支：<code>git push origin master</code></li>
+<li>记录推送默认远端分支：<code>git push -u origin master</code></li>
+<li>删除远程分支：<code>git push origin --delete hotFixBranch</code>,或者<code>git push origin :hotFixBranch</code></li>
+<li>拉取远端分支：<code>git pull origin dev</code></li>
+</ol>
+</li>
+<li><p>团队开发：</p>
+<ol>
+<li>每天第一件事就是拉取git pull更新一下代码</li>
+<li>下班前提交代码，避免断电导致硬件故障导致本地代码丢失</li>
+</ol>
+</li>
+<li><p>gitignore</p>
+</li>
 </ol>
 
                 
@@ -454,7 +506,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/git/">#git</a>
+        <a href="/tags/Git/">#Git</a>
       
     </div>
   
@@ -466,7 +518,7 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>git</div>
+      <div>Git</div>
       <div>http://chasingbalance.top/2023/01/13/git/</div>
     </div>
     <div class="license-meta">
